@@ -3,25 +3,22 @@ module.exports = {
   development: {
     username: "root",
     password: process.env.PASSWORD,
-    database: "database_development",
+    database: "tribbler",
     host: "127.0.0.1",
-    dialect: "mysql",
-    operatorsAliases: false
+    dialect: "mysql"
   },
   test: {
     username: "root",
     password: process.env.PASSWORD,
-    database: "database_test",
+    database: "test_db",
     host: "127.0.0.1",
-    dialect: "mysql",
-    operatorsAliases: false
+    dialect: "mysql"
   },
   production: {
     username: "root",
     password: process.env.PASSWORD,
     database: "database_production",
     host: "127.0.0.1",
-    dialect: "mysql",
-    operatorsAliases: false
+    dialect: "mysql"
   }
 };
