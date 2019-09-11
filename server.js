@@ -1,11 +1,15 @@
 var express = require("express");
 var app = express();
+var exphbs = require("express-handlebars");
 var PORT = process.env.PORT || 8080;
 var db = require("./models");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
 //create and require routes file below
 require("./routes/apiRoutes")(app);
 // require("./routes/htmlRoutes")(app);
