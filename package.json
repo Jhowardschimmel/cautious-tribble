@@ -1,0 +1,47 @@
+{
+  "name": "cautious-tribble",
+  "version": "1.0.0",
+  "description": "A full-stack app for posting with CRUD functionality",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run lint && mocha",
+    "start": "node server.js",
+    "lint": "eslint --quiet .",
+    "fix": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jhowardschimmel/cautious-tribble.git"
+  },
+  "keywords": [
+    "full-stack",
+    "CRUD",
+    "express server",
+    "sequelize"
+  ],
+  "author": "Jesse Schimmel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jhowardschimmel/cautious-tribble/issues"
+  },
+  "homepage": "https://github.com/Jhowardschimmel/cautious-tribble#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.18.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "mocha": "^6.2.0",
+    "prettier": "1.18.2"
+  }
+}
