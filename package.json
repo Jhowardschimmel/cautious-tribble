@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm run lint && mocha",
+    "test": "npm run lint && mocha --exit",
     "start": "node server.js",
     "lint": "eslint --quiet .",
     "fix": "eslint --fix ."
