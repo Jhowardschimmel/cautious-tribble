@@ -1,12 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
   var Post = sequelize.define("Post", {
-    text: DataTypes.STRING,
-    description: DataTypes.TEXT
-  });
-  return Post;
-};
-module.exports = function(sequelize, DataTypes) {
-  var Post = sequelize.define("Post", {
     title: {
       type: DataTypes.STRING,
       allowNull: false,
